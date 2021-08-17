@@ -1,0 +1,1 @@
+This repository contains several creative coding projects written in Python. Mudules such as PyCairo and PIL were used. I started these projects as an introduction to generative arts and image processing. In the future I will impletement some of these projects again using a more versatile tool - p5.js.

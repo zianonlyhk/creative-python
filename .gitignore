@@ -1,0 +1,10 @@
+.pytest_cache
+.vscode
+
+# snake
+snake_img*
+input_img.jpg
+resized_img.jpg
+distinct_img.jpg
+input_img.jpg
+output_img.png
