@@ -6,9 +6,11 @@ import librosa as lr
 
 
 # INTERFACE ###########################################################################################
-SIDE_LENGTH = 4000
-numRounds = 60
-numStepsInRound = 12000
+SIDE_LENGTH = 4000  # number of pixcel of the output image side
+numRounds = 60  # number of loop rounds, i.e. No. of layers
+numStepsInRound = 12000  # number of array elements in a loop round
+# change the audio file name here:
+audio, sRate = lr.load("undercurrent.wav")
 # INTERFACE ###########################################################################################
 
 
@@ -28,7 +30,6 @@ def polar_to_cartesian(_r, _theta):
 
 
 # loading audio and creating arrays
-audio, sRate = lr.load("undercurrent.wav")
 audioLen = len(audio)
 corrAudioLen = audioLen-audioLen % (numRounds*numStepsInRound)
 audioStep = corrAudioLen//(numRounds*numStepsInRound)
