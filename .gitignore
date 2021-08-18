@@ -1,5 +1,6 @@
 .pytest_cache
 .vscode
+res
 
 # snake
 snake_img*
@@ -10,5 +11,4 @@ input_img.jpg
 output_img.png
 
 # undercurrent
-peter_saville.jpg
 undercurrent.wav
